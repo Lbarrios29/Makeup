@@ -229,13 +229,11 @@ nav {
     text-transform: uppercase;
     animation-duration: 1s;
     animation-name: izqDer;
-    /* animation-iteration-count: infinite; */
 }
 
 .sectionIndex h2 {
     animation-duration: 2s;
     animation-name: aparecer;
-    /* animation-iteration-count: infinite; */
 }
 
 @keyframes izqDer {
@@ -395,20 +393,15 @@ nav {
         "textoPestana imgPestana"
         "imgUnas      textoUnas";
     align-items: center;
-    /* justify-items: center; */
     /* background-color: blue; */
 }
 
 .boxServicios {
-    /* background-color: brown; */
-    /* width: 100%;
-    height: 100%; */
     margin-left: 50px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: .04em;
     line-height: 20px;
-    /* justify-items: center; */
 }
 
 .boxServicios a img {
@@ -461,7 +454,6 @@ nav {
     color: white;
     font-weight: 600;
     line-height: 1px;
-    /* letter-spacing: 1px; */
     text-transform: uppercase;
 }
 
@@ -484,11 +476,6 @@ nav {
     width: 100%;
     height: auto;
     display: grid;
-    /* margin: 40px 150px 40px 150px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 16%);
-    row-gap: 20px;
-    justify-items: stretch; */
     grid-template-columns: repeat(3, minmax(100px, 293px));
     justify-content: center;
     gap: 28px;
@@ -499,7 +486,6 @@ nav {
 .box {
     width: 100%;
     height: auto;
-    /* height: 300px; */
     position: relative;
     /* background-color: aqua; */
 }
@@ -512,10 +498,6 @@ nav {
 
 .box a img {
     width: 100%;
-    /* height: 300px;
-    object-fit: cover;
-    align-items: center;
-    vertical-align: top; */
     height: 100%;
     vertical-align: top;
 }
@@ -535,7 +517,6 @@ nav {
 
 .box a:hover .overlay {
     display: inline;
-    /* text-align: center; */
 }
 
 .box:hover {
@@ -640,31 +621,21 @@ footer {
     width: 100%;
     height: 25vh;
     display: grid;
-    /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
     grid-template: repeat(1, 1fr) / repeat(3, 1fr);
     row-gap: 1px;
     column-gap: 1px;
     grid-template-areas: "direccion menu redesSociales";
-    /* "mail menu redesSociales"
-        "cel menu redesSociales"; */
-    /* justify-content: center; */
     align-items: center;
-    /* align-content: center; */
-    /* background-color: black; */
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(112, 111, 111));
 }
 
 .boxFooter {
     width: 100%;
     height: 70%;
-    /* height: 25vh; */
     font-size: 16px;
-    /* padding-left: 37px; */
     letter-spacing: .06em;
     color: #faf4f4;
     line-height: 22px;
-    /* margin-bottom: 8px; */
-    /* background-color: blueviolet; */
 }
 
 .direccion {
@@ -675,14 +646,6 @@ footer {
     padding-left: 30px;
     /* background-color: yellow; */
 }
-
-/* .mail {
-    grid-area: mail;
-}
-
-.cel {
-    grid-area: cel;
-} */
 
 .linkMenu {
     grid-area: menu;
@@ -714,13 +677,10 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     font-size: 16px;
-    /* padding-left: 37px; */
     letter-spacing: .06em;
     color: #faf4f4;
     line-height: 22px;
     padding-right: 200px;
-    /* margin-bottom: 8px; */
-
 }
 
 .facebook {
