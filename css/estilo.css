@@ -540,6 +540,7 @@ nav {
 }
 
 #h3Formulario {
+    width: 100%;
     line-height: 1.5;
     font-weight: 400;
     /* color: #000; */
@@ -552,11 +553,13 @@ nav {
 }
 
 .contactoFormulario {
+    width: 100%;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .flexNombre {
+    width: 100%;
     display: flex;
     padding-top: 10px;
     /* background-color: #25d366; */
@@ -590,6 +593,7 @@ nav {
 }
 
 #comentario {
+    width: 60%;
     border: 1px solid white;
     /* background-color: rgb(34, 34, 34); */
     padding: 6px 12px;
@@ -725,4 +729,69 @@ footer {
 
 .instagram {
     width: 33%;
+}
+
+@media screen and (min-width: 425px) {
+
+    #h3Formulario {
+        line-height: 1.2;
+        font-size: 1.3rem;
+    }
+
+    .containerFormulario {
+        width: 85%;
+    }
+
+    .flexNombre {
+        flex-direction: column;
+    }
+
+    .boxContacto2 {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    #comentario {
+        width: 80%;
+    }
+
+    .botonContacto {
+        width: 30%;
+    }
+
+    .botonContacto:hover {
+        background-color: rgb(155, 25, 25);
+        transform: scale(1.03, 1.03);
+    }
+
+    .contenedorFooter {
+        height: 50vh;
+        /* grid-template: repeat(1, 1fr) / repeat(3, 1fr); */
+        row-gap: 0px;
+        column-gap: 0px;
+        /* grid-template-areas: "direccion menu redesSociales"; */
+    }
+
+    .boxFooter {
+        font-size: 14px;
+        letter-spacing: none;
+        color: #faf4f4;
+        line-height: 20px;
+    }
+
+    .direccion {
+        padding-left: 20px;
+    }
+
+    .menuFooter {
+        padding-left: 60px;
+    }
+
+    .redesSociales {
+        flex-direction: column;
+        line-height: 20px;
+        padding-right: 20px;
+        padding-left: 60px;
+    }
+
 }
