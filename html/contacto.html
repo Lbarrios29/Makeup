@@ -21,7 +21,7 @@
 
                 <div class="logo">
                     <a href="../index.html">
-                        <img src="../images/logo.jpg" alt="logo" class="logo__img--center">
+                        <img src="../images/logodiaz.png" alt="logo" class="logo__img--center">
                     </a>
                 </div>
 
@@ -47,55 +47,52 @@
 
             </div>
         </nav>
-        <h1>Contactate con Nosotros</h1>
+        <!-- <h1 id="h1Contacto">Contactate con Nosotros</h1> -->
     </header>
 
     <main>
         <section>
             <div class="containerFormulario">
 
-                <!-- <h2 class="h3Contacto">Contactate con Nosotros</h2> -->
+                <h3 id="h3Formulario">Contactate con Nosotros</h3>
 
                 <form action="" class="contactoFormulario">
 
-                    <!-- Nombre Completo-->
-                    <label for="nombre" class="label">Nombre Completo</label><br>
-                    <input type="text" id="nombre" placeholder="Nombre Completo" class="input">
+                    <div class="flexNombre">
 
-                    <!-- Email-->
-                    <br>
-                    <label for="email" class="label">Direccion de email</label><br>
-                    <input type="email" name="email" id="email" placeholder="Email" class="input">
+                        <div class="boxContacto">
+                            <!-- Nombre Completo-->
+                            <label for="nombre" class="label">Nombre Completo</label>
+                            <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre Completo"
+                                required>
+                        </div>
+
+                        <div class="boxContacto2">
+                            <!-- Email-->
+                            <label for="email" class="label">Direccion de email</label>
+                            <input type="email" name="email" id="email" class="input" placeholder="Email" required>
+                        </div>
+
+                    </div>
 
                     <!-- Lista Despegable Asunto-->
                     <br>
                     <label for="asunto" class="label">Asunto</label>
-                    <select name="asunto" id="asunto" class="input">
-                        <option value=""></option>
+                    <select name="asunto" id="asunto" class="input" required>
+                        <option selected disabled>-- Elija una opción --</option>
                         <option value="">Maquillaje</option>
                         <option value="">Pedicuria</option>
                         <option value="">Peinado</option>
-                        <option value="">Pestanas</option>
-                        <option value="">Unas</option>
+                        <option value="">Pestañas</option>
+                        <option value="">Uñas</option>
                     </select>
 
-                    <!--Radio Button Sexo-->
-                    <!-- <br>
-                <label for="rb" class="label">Estado Civil:</label>
-                <label for="rb" class="label">M</label>
-                <input type="radio" name="rb1" id="rb">
-                <label for="rb1" class="label">F</label>
-                <input type="radio" name="rb1" id="rb1">
-                <label for="rb2" class="label">Otro</label>
-                <input type="radio" name="rb1" id="rb2"> -->
-
                     <!-- Comentarios -->
-                    <br><br>
+                    <br>
                     <label for="comentario" class="label">Mensaje</label>
                     <br>
-                    <textarea name="comentario" id="comentario" cols="50" rows="7" placeholder="Mensaje"
-                        class="comentarioContacto">
-                </textarea>
+                    <textarea id="comentario" name="comentario" cols="53" rows="7" placeholder="Mensaje">
+                    </textarea>
 
                     <!--Checkbox-->
                     <br>
