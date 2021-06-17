@@ -731,7 +731,8 @@ footer {
     width: 33%;
 }
 
-@media screen and (min-width: 425px) {
+/*TELEFONOS*/
+@media screen and (max-width: 600px) {
 
     #h3Formulario {
         line-height: 1.2;
@@ -739,7 +740,7 @@ footer {
     }
 
     .containerFormulario {
-        width: 85%;
+        width: 90%;
     }
 
     .flexNombre {
@@ -752,11 +753,11 @@ footer {
     }
 
     #comentario {
-        width: 80%;
+        width: 70%;
     }
 
     .botonContacto {
-        width: 30%;
+        width: 20%;
     }
 
     .botonContacto:hover {
@@ -770,6 +771,70 @@ footer {
         row-gap: 0px;
         column-gap: 0px;
         /* grid-template-areas: "direccion menu redesSociales"; */
+    }
+
+    .boxFooter {
+        font-size: 14px;
+        letter-spacing: none;
+        color: #faf4f4;
+        line-height: 20px;
+    }
+
+    .direccion {
+        padding-left: 20px;
+    }
+
+    .menuFooter {
+        padding-left: 60px;
+    }
+
+    .redesSociales {
+        flex-direction: column;
+        line-height: 20px;
+        padding-right: 20px;
+        padding-left: 60px;
+    }
+
+}
+
+/*TELEFONOS LANDSCAPE + TABLET VERTICAL*/
+@media screen and (min-width: 600px) {
+
+    /* #h3Formulario {
+        line-height: 1.2;
+        font-size: 1.3rem;
+    }
+
+    .containerFormulario {
+        width: 90%;
+    }
+
+    .flexNombre {
+        flex-direction: column;
+    }
+
+    .boxContacto2 {
+        padding-left: 0px;
+        padding-top: 10px;
+    } */
+
+    #comentario {
+        width: 67%;
+    }
+
+    .botonContacto {
+        width: 20%;
+    }
+
+    .botonContacto:hover {
+        background-color: rgb(155, 25, 25);
+        transform: scale(1.03, 1.03);
+    }
+
+    .contenedorFooter {
+        height: 50vh;
+        row-gap: 0px;
+        column-gap: 0px;
     }
 
     .boxFooter {
