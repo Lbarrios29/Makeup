@@ -527,16 +527,24 @@ nav {
 *$*$                         SECCION CONTACTO                            *
 *$*$**********************************************************************/
 .containerFormulario {
-    width: 70%;
+    width: 85%;
     height: auto;
     padding: 10px 15px 40px 40px;
     margin: 30px auto 0px auto;
-    background-image: url(../images/contacto/imgForm.jpg);
-    background-repeat: no-repeat;
+    background: url(../images/contacto/imgForm.jpg) no-repeat;
+    /* background-image: url(../images/contacto/imgForm.jpg);
+    background-repeat: no-repeat; */
     background-size: cover;
     background-position: center center;
     border-radius: 6px;
     border: none;
+}
+
+.boxFomulario {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #25d366; */
 }
 
 #h3Formulario {
@@ -550,12 +558,14 @@ nav {
     margin-bottom: 24px;
     margin-top: 20px;
     padding: 0px;
+    /* background-color: aqua; */
 }
 
 .contactoFormulario {
     width: 100%;
     text-transform: uppercase;
     font-weight: 600;
+    /* background-color: blue; */
 }
 
 .flexNombre {
@@ -565,7 +575,12 @@ nav {
     /* background-color: #25d366; */
 }
 
+.boxContacto {
+    width: 100%;
+}
+
 .boxContacto2 {
+    width: 100%;
     padding-left: 20px;
 }
 
@@ -579,7 +594,8 @@ nav {
 
 .input {
     display: block;
-    width: 250px;
+    /* width: 340px; */
+    width: 100%;
     padding: 6px 12px;
     font-size: 1rem;
     font-weight: 400;
@@ -592,8 +608,12 @@ nav {
     transition: background-color 0.3s
 }
 
+.asunto {
+    width: 50%;
+}
+
 #comentario {
-    width: 60%;
+    width: 100%;
     border: 1px solid white;
     /* background-color: rgb(34, 34, 34); */
     padding: 6px 12px;
@@ -606,7 +626,7 @@ nav {
 }
 
 .botonContacto {
-    width: 15%;
+    width: 30%;
     color: white;
     background-color: rgb(34, 34, 34);
     font-weight: 600;
@@ -731,7 +751,35 @@ footer {
     width: 33%;
 }
 
-/*TELEFONOS*/
+/*DISPOSITIVOS XL LARGOS*/
+/* @media screen and (max-width: 1200px) {} */
+
+/*NOTEBOOK + LAP + ESCRITORIO DISPOSITIVOS LARGOS*/
+@media screen and (max-width: 992px) {
+    .containerFormulario {
+        width: 95%;
+    }
+}
+
+/*TABLET LANDSCAPE UP DISPOSITIVOS MEDIOS*/
+@media screen and (max-width: 768px) {
+
+    .flexNombre {
+        flex-direction: column;
+    }
+
+    .boxContacto2 {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    .asunto {
+        width: 100%;
+    }
+
+}
+
+/*TELEFONOS - DISPOSITIVOS XS*/
 @media screen and (max-width: 600px) {
 
     #h3Formulario {
@@ -743,34 +791,22 @@ footer {
         width: 90%;
     }
 
-    .flexNombre {
-        flex-direction: column;
-    }
-
-    .boxContacto2 {
-        padding-left: 0px;
-        padding-top: 10px;
+    .input {
+        width: 110%;
     }
 
     #comentario {
-        width: 70%;
+        width: 110%;
     }
 
     .botonContacto {
-        width: 20%;
-    }
-
-    .botonContacto:hover {
-        background-color: rgb(155, 25, 25);
-        transform: scale(1.03, 1.03);
+        width: 40%;
     }
 
     .contenedorFooter {
         height: 50vh;
-        /* grid-template: repeat(1, 1fr) / repeat(3, 1fr); */
         row-gap: 0px;
         column-gap: 0px;
-        /* grid-template-areas: "direccion menu redesSociales"; */
     }
 
     .boxFooter {
@@ -797,66 +833,24 @@ footer {
 
 }
 
-/*TELEFONOS LANDSCAPE + TABLET VERTICAL*/
-@media screen and (min-width: 600px) {
+/*TELEFONOS LANDSCAPE + TABLET VERTICAL DISPOSITIVOS SMALLS*/
+@media screen and (max-width: 599px) {
 
-    /* #h3Formulario {
+    .boxFomulario {
+        width: 65%;
+    }
+
+    #h3Formulario {
         line-height: 1.2;
         font-size: 1.3rem;
     }
 
-    .containerFormulario {
-        width: 90%;
+    .input {
+        width: 110%;
     }
-
-    .flexNombre {
-        flex-direction: column;
-    }
-
-    .boxContacto2 {
-        padding-left: 0px;
-        padding-top: 10px;
-    } */
 
     #comentario {
-        width: 67%;
-    }
-
-    .botonContacto {
-        width: 20%;
-    }
-
-    .botonContacto:hover {
-        background-color: rgb(155, 25, 25);
-        transform: scale(1.03, 1.03);
-    }
-
-    .contenedorFooter {
-        height: 50vh;
-        row-gap: 0px;
-        column-gap: 0px;
-    }
-
-    .boxFooter {
-        font-size: 14px;
-        letter-spacing: none;
-        color: #faf4f4;
-        line-height: 20px;
-    }
-
-    .direccion {
-        padding-left: 20px;
-    }
-
-    .menuFooter {
-        padding-left: 60px;
-    }
-
-    .redesSociales {
-        flex-direction: column;
-        line-height: 20px;
-        padding-right: 20px;
-        padding-left: 60px;
+        width: 110%;
     }
 
 }

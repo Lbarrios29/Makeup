@@ -54,56 +54,60 @@
         <section>
             <div class="containerFormulario">
 
-                <h3 id="h3Formulario">Contactate con Nosotros</h3>
+                <div class="boxFomulario">
 
-                <form action="" class="contactoFormulario">
+                    <h3 id="h3Formulario">Contactate con Nosotros</h3>
 
-                    <div class="flexNombre">
+                    <form action="" class="contactoFormulario">
 
-                        <div class="boxContacto">
-                            <!-- Nombre Completo-->
-                            <label for="nombre" class="label">Nombre Completo</label>
-                            <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre Completo"
-                                required>
+                        <div class="flexNombre">
+
+                            <div class="boxContacto">
+                                <!-- Nombre Completo-->
+                                <label for="nombre" class="label">Nombre Completo</label>
+                                <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre Completo"
+                                    required>
+                            </div>
+
+                            <div class="boxContacto2">
+                                <!-- Email-->
+                                <label for="email" class="label">Direccion de email</label>
+                                <input type="email" name="email" id="email" class="input" placeholder="Email" required>
+                            </div>
+
                         </div>
 
-                        <div class="boxContacto2">
-                            <!-- Email-->
-                            <label for="email" class="label">Direccion de email</label>
-                            <input type="email" name="email" id="email" class="input" placeholder="Email" required>
-                        </div>
+                        <!-- Lista Despegable Asunto-->
+                        <br>
+                        <label for="asunto" class="label">Asunto</label>
+                        <select name="asunto" id="asunto" class="input asunto" required>
+                            <option selected disabled>-- Elija una opción --</option>
+                            <option value="">Maquillaje</option>
+                            <option value="">Pedicuria</option>
+                            <option value="">Peinado</option>
+                            <option value="">Pestañas</option>
+                            <option value="">Uñas</option>
+                        </select>
 
-                    </div>
-
-                    <!-- Lista Despegable Asunto-->
-                    <br>
-                    <label for="asunto" class="label">Asunto</label>
-                    <select name="asunto" id="asunto" class="input" required>
-                        <option selected disabled>-- Elija una opción --</option>
-                        <option value="">Maquillaje</option>
-                        <option value="">Pedicuria</option>
-                        <option value="">Peinado</option>
-                        <option value="">Pestañas</option>
-                        <option value="">Uñas</option>
-                    </select>
-
-                    <!-- Comentarios -->
-                    <br>
-                    <label for="comentario" class="label">Mensaje</label>
-                    <br>
-                    <textarea id="comentario" name="comentario" cols="51" rows="7" placeholder="Mensaje">
+                        <!-- Comentarios -->
+                        <br>
+                        <label for="comentario" class="label">Mensaje</label>
+                        <br>
+                        <textarea id="comentario" name="comentario" cols="51" rows="7" placeholder="Mensaje">
                     </textarea>
 
-                    <!--Checkbox-->
-                    <br><br>
-                    <label for="notif" class="label">¿Desea recibir Newsletter?</label>
-                    <input type="checkbox" name="chk" id="notif"><br>
+                        <!--Checkbox-->
+                        <br><br>
+                        <label for="notif" class="label">¿Desea recibir Newsletter?</label>
+                        <input type="checkbox" name="chk" id="notif"><br>
 
-                    <br>
-                    <input type="submit" value="Enviar" class="botonContacto">
-                    <input type="reset" value="Reset" class="botonContacto"><br>
+                        <br>
+                        <input type="submit" value="Enviar" class="botonContacto">
+                        <input type="reset" value="Reset" class="botonContacto"><br>
 
-                </form>
+                    </form>
+
+                </div>
             </div>
         </section>
     </main>
