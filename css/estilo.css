@@ -540,7 +540,7 @@ nav {
     border: none;
 }
 
-.boxFomulario {
+.boxFormulario {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -836,8 +836,9 @@ footer {
 /*TELEFONOS LANDSCAPE + TABLET VERTICAL DISPOSITIVOS SMALLS*/
 @media screen and (max-width: 599px) {
 
-    .boxFomulario {
-        width: 65%;
+    .boxFormulario {
+        width: 75%;
+        /* background-color: blue; */
     }
 
     #h3Formulario {
